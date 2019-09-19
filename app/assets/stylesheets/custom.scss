@@ -15,8 +15,7 @@ $gray-medium-light: #eaeaea;
    
 body {
   background-image: url("nuno_44sn.png");
-   padding-top: 200px;
-   background-size: cover;
+  background-size: cover;
 }
 
 
@@ -32,6 +31,8 @@ textarea {
   text-align: center;
   background-image: url("nuno_04s.png");
   background-size: cover;
+  color: #FBFCFEFF;
+  margin-top: 200px;
 }
 
 .center h1 {
@@ -47,8 +48,10 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 120px;
   letter-spacing: -2px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   text-align: center;
+  margin-top: 90px
+
 }
 
 h2 {
