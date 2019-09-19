@@ -24,7 +24,8 @@ textarea {
 
 .center {
   text-align: center;
-  background-image: url("nuno_04s.png")
+  background-image: url("nuno_04s.png");
+  background-size: cover;
 }
 
 .center h1 {
@@ -57,6 +58,10 @@ p {
   line-height: 1.7em;
 }
 
+
+
+
+
 /* header */
 
 #logo {
@@ -81,9 +86,16 @@ p#alter {
   color: #7F7F7FF8;
 }
 
-.navbar-default .navbar-nav > li > a {
-color: #ffffff;
+header li {
+ font-size: 17px;
+} 
+
+.navbar-default {
+background-color: rgba(0,0,0,0);
+border: none;
 }
+
+
 
 
 /* footer */
@@ -107,6 +119,7 @@ footer {
     li {
       float: left;
       margin-left: 15px;
+      font-size: 20px;
     }
   }
 }
