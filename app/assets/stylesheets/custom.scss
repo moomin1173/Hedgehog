@@ -47,13 +47,11 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
 
-h1 {
+ h1 {
   font-size: 60px;
   letter-spacing: -2px;
   margin-bottom: 10px;
   text-align: center;
-  margin-top: 90px
-
 }
 
 h2 {
@@ -196,7 +194,7 @@ input, textarea, select, .uneditable-input {
 
 input {
   height: 50px !important;
-  font-size: 30px !important;
+  font-size: 27px !important;
   padding: 20px;
 }
 
@@ -213,4 +211,8 @@ input {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+.btn {
+  margin-top: 30px;
 }
