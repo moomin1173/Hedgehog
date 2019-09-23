@@ -1,20 +1,20 @@
 <% provide(:title, 'Sign up') %>
-<h1>Sign up</h1>
-<div class="row">
+<h1 class="sign">ユーザー登録</h1>
+<div class="siguprow">
   <div class="col-xs-6 col-xs-offset-3">
     <%= form_for(@user, url:signup_path) do |f| %>
       <%= render 'shared/error_messages' %>
 
-      <%= f.label :name, "名前" %>
+      <%= f.label :name, "お名前" %>
       <%= f.text_field :name, class: 'form-control'  %>
 
-      <%= f.label :email, "メールアドレス" %>
+      <%= f.label :email, "メールアドレス📧" %>
       <%= f.email_field :email, class: 'form-control' %>
 
-      <%= f.label :password, "パスワード"%>
+      <%= f.label :password, "パスワード🔐"%>
       <%= f.password_field :password, class: 'form-control'%>
 
-      <%= f.label :password_confirmation, "パスワード(確認)" %>
+      <%= f.label :password_confirmation, "パスワード🔐(確認)" %>
       <%= f.password_field :password_confirmation, class: 'form-control' %>
 
       <%= f.submit "アカウント登録", class: "btn btn-info" %>
