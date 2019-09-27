@@ -14,7 +14,13 @@
 
     <div class="collapse navbar-collapse" id="navbarEexample">
       <ul class="nav navbar-nav navbar-right">
+        
+
         <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "作品一覧", about_path %></li>
+        <li><%= link_to "お値段表", contact_path %></li>
+        <li><%= link_to "お直しメニュー", help_path %></li>
+
 
         <% if logged_in? %>
           <li><%= link_to "ユーザー登録", signup_path %></li>
