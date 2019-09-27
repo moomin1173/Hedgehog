@@ -1,3 +1,24 @@
 <% provide(:title, "About") %>
     <h1 class="work">作品一覧</h1>
-    <p>Alter Clothes Revive</p>
+    
+<body>
+  <%= stylesheet_link_tag "styles/styles.css" %>
+  <div class="con">
+    <main class="ma">
+      <img>
+    </main>
+
+    <nav>
+      <ul class="play">
+        <li id="play">Play</li>
+        <li id="pause" class="hidden">Pause</li>
+        <li id="prev">&lt;</li>
+        <li id="next">&gt;</li>
+      </ul>
+    </nav>
+
+    <ul class="jpgs">
+    </ul>
+    <%= javascript_include_tag 'main.js' %>
+  </div>
+</body>

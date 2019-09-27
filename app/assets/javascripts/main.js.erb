@@ -1,0 +1,115 @@
+"use strict";
+
+
+{
+  const images = [
+    '<%= asset_path("f04.jpg") %>',
+    '<%= asset_path("f05.jpg") %>',
+    '<%= asset_path("f06.jpg") %>',
+    '<%= asset_path("f07.jpg") %>',
+    '<%= asset_path("f08.jpg") %>',
+    '<%= asset_path("f09.jpg") %>',
+    '<%= asset_path("f10.jpg") %>',
+    '<%= asset_path("f11.jpg") %>',
+    '<%= asset_path("f12.jpg") %>',
+    '<%= asset_path("f13.jpg") %>',
+    '<%= asset_path("f14.jpg") %>',
+    '<%= asset_path("f15.jpg") %>',
+    '<%= asset_path("f16.jpg") %>',
+    '<%= asset_path("f17.jpg") %>',
+    '<%= asset_path("f18.jpg") %>',
+    '<%= asset_path("f19.jpg") %>',
+    '<%= asset_path("f20.jpg") %>',
+    '<%= asset_path("f21.jpg") %>',
+    '<%= asset_path("f22.jpg") %>',
+    '<%= asset_path("f23.jpg") %>',
+    '<%= asset_path("f24.jpg") %>',
+    '<%= asset_path("f01.jpg") %>',
+    '<%= asset_path("f02.jpg") %>',
+    '<%= asset_path("f03.jpg") %>',
+  ];
+
+  let currentNum = 0;
+
+  function setMainImage(image) {
+    document.querySelector("main img").src = image;
+  }
+
+  setMainImage(images[currentNum]);
+
+  function removeCurrentClass() {
+    document.querySelectorAll(".jpgs li")[currentNum].classList.remove("current");
+  }
+
+  function addCurrentClass() {
+    document.querySelectorAll(".jpgs li")[currentNum].classList.add("current");
+  }
+
+  //document.querySelector("main img").src = images[currentNum];
+
+  const jpgs = document.querySelector(".jpgs");
+  images.forEach((image, index) => {
+    const li = document.createElement("li");
+    if (index === currentNum) {
+      li.classList.add("current");
+    }
+
+    li.addEventListener("click", () => {
+      setMainImage(image);
+      removeCurrentClass();
+      currentNum = index;
+      addCurrentClass();
+    });
+
+    const img = document.createElement("img");
+    img.src = image;
+    li.appendChild(img);
+    jpgs.appendChild(li);
+  });
+
+  const next = document.getElementById("next");
+  next.addEventListener("click", () => {
+    removeCurrentClass();
+    currentNum++;
+    if(currentNum === images.length) {
+      currentNum = 0;
+    }
+    addCurrentClass();
+    setMainImage(images[currentNum]);
+  });
+
+  const prev = document.getElementById("prev");
+  prev.addEventListener("click", () => {
+    removeCurrentClass();
+    currentNum--;
+    if(currentNum < 0) {
+      currentNum = images.length - 1;
+    }
+    addCurrentClass();
+    setMainImage(images[currentNum]);
+  });
+
+  let timeoutId;
+
+  function playSlideshow() {
+    timeoutId = setTimeout(() => {
+      next.click();
+      playSlideshow();
+    }, 1000);
+  }
+
+  const play = document.getElementById("play");
+  const pause = document.getElementById("pause");
+
+  play.addEventListener("click", () => {
+    play.classList.add("hidden");
+    pause.classList.remove("hidden");
+    playSlideshow();
+  });
+
+  pause.addEventListener("click", () => {
+    play.classList.remove("hidden");
+    pause.classList.add("hidden");
+    clearTimeout(timeoutId);
+  });
+}
