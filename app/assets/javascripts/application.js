@@ -13,6 +13,7 @@
 //= require colorbox-rails
 //= require rails-ujs
 //= require jquery
+//= require bootstrap-sprockets
 //= require bootstrap
 //= require turbolinks
 // require_tree .
