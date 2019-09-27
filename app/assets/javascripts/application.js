@@ -10,10 +10,10 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require colorbox-rails
+// require colorbox-rails
 //= require rails-ujs
 //= require jquery
-//= require bootstrap-sprockets
+// require bootstrap-sprockets
 //= require bootstrap
 //= require turbolinks
 // require_tree .

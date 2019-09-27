@@ -29,6 +29,10 @@ textarea {
   resize: vertical;
 }
 
+label {
+  color: #676868FF;
+}
+
 .center {
   text-align: center;
   background-image: url("nuno_04s.png");
@@ -61,6 +65,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -2px;
   margin-bottom: 10px;
   text-align: center;
+  color:#676868FF; 
 }
 
 h2 {
@@ -113,6 +118,9 @@ background-color: rgba(0,0,0,0);
 border: none;
 }
 
+a {
+  font-size: 20px;
+}
 
 
 
@@ -140,6 +148,12 @@ footer {
       font-size: 20px;
     }
   }
+}
+
+.miyuki {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
 }
 
 /* miscellaneous */
@@ -222,9 +236,6 @@ input {
   }
 }
 
-.btn {
-  margin-top: 30px;
-}
 
 .checkbox {
   margin-top: -10px;
@@ -245,6 +256,10 @@ input {
 
 .price {
   margin-top: 150px
+}
+
+.price2 {
+  margin-top: 40px;
 }
 
 /* about */
@@ -271,12 +286,28 @@ input {
   margin-top: 150px
 }
 
+.acount {
+  margin-top:  35px;
+}
+
 /* new */
 
 .new {
   padding-top: 18px
 }
 
-a {
-  font-size: 20px;
+.cmisin2 {
+  margin-top: 70px;
+}
+
+input[type="checkbox"]{
+  position: relative;
+  top: -16px;
+  bottom: 10px;
+}
+
+/* home */
+
+.cmisin {
+  margin-top: 70px;
 }
