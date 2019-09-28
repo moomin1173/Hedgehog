@@ -122,13 +122,18 @@ a {
   font-size: 20px;
 }
 
-
+.hedgehog {
+  background: url("hedge.png") no-repeat left center;
+  background-size: contain;
+  height: 95px;
+  width: 95px;
+}
 
 /* footer */
 
 footer {
-  margin-top: 250px;
-  padding-top: 5px;
+  margin-left: 10px;
+  margin-right: 20px;
   color: #777;
   a {
     color: #555;
@@ -145,15 +150,16 @@ footer {
     li {
       float: left;
       margin-left: 15px;
-      font-size: 20px;
+      font-size: 25px;
     }
   }
 }
 
 .miyuki {
-  position: fixed;
-  right: 10px;
-  bottom: 10px;
+  background: url("miyuki.png") no-repeat right center;
+  background-size: contain;
+  height: 65px;
+  width: 65px;
   float: right;
 }
 
@@ -266,12 +272,16 @@ input {
 /* about */
 
 .work {
-  margin-top: 150px
+  margin-top: 160px
 }
 
 /* show */
 
 .show {
+  margin-top: 150px
+}
+
+.shows {
   margin-top: 150px
 }
 
