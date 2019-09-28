@@ -291,6 +291,24 @@ input {
   margin-top: 150px
 }
 
+.revive {
+  text-align: center;
+  color: #777; 
+}
+
+table {
+  background-color: white;
+  padding-bottom: 50px;
+}
+
+.onaosi h3 {
+  font-size: 60px;
+  color: #777;
+}
+
+.s01 {
+  padding-left: 25px;
+}
 /* signup */
 
 .sign {
@@ -299,6 +317,10 @@ input {
 
 .acount {
   margin-top:  35px;
+}
+
+.well {
+  margin-top: 90px;
 }
 
 /* new */
@@ -313,7 +335,7 @@ input {
 
 input[type="checkbox"]{
   position: relative;
-  top: -16px;
+  top: -10px;
   bottom: 10px;
 }
 
