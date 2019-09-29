@@ -18,6 +18,7 @@ $gray-medium-light: #eaeaea;
 body {
   background-image: url("nuno_44sn.png");
   background-size: cover;
+  font-family:  'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic' ;
 }
 
 
@@ -31,6 +32,7 @@ textarea {
 
 label {
   color: #676868FF;
+  font-size: 23px;
 }
 
 .center {
@@ -119,7 +121,9 @@ border: none;
 }
 
 a {
-  font-size: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: semi-condensed;
 }
 
 .hedgehog {
@@ -261,8 +265,8 @@ input {
 
 /* contact */
 
-.price {
-  margin-top: 150px
+h1.price {
+  margin-top: 200px
 }
 
 .price2 {
@@ -272,7 +276,7 @@ input {
 /* about */
 
 .work {
-  margin-top: 160px
+  margin-top: 200px
 }
 
 /* show */
@@ -288,12 +292,14 @@ input {
 /* help */
 
 .help {
-  margin-top: 150px
+  margin-top: 200px
 }
 
-.revive {
+p.revive {
   text-align: center;
-  color: #777; 
+  color: #777;
+  font-size: 23px; 
+  margin-bottom: 0px;
 }
 
 table {
@@ -301,26 +307,23 @@ table {
   padding-bottom: 50px;
 }
 
-.onaosi h3 {
-  font-size: 60px;
+h3.rename {
+  font-size: 53px;
   color: #777;
 }
 
 .s01 {
   padding-left: 25px;
+  padding-bottom: 10px;
 }
 /* signup */
 
 .sign {
-  margin-top: 150px
+  margin-top: 200px
 }
 
 .acount {
   margin-top:  35px;
-}
-
-.well {
-  margin-top: 90px;
 }
 
 /* new */
