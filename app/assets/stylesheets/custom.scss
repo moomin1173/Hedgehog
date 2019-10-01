@@ -47,13 +47,7 @@ label {
   padding-top: 40px;
 }
 
-.login {
-  margin-top: 200px;
-  padding-top: 10px;
-  padding-bottom: 5px;
-  background-image: url("nuno_04s.png");
-  color: #FBFCFEFF;
-}
+
 
 /* typography */
 
@@ -140,6 +134,7 @@ footer {
   color: #777;
   a {
     color: #555;
+    font-size: 18px;
     &:hover {
       color: #222;
     }
@@ -152,8 +147,8 @@ footer {
     list-style: none;
     li {
       float: left;
-      margin-left: 15px;
-      font-size: 25px;
+      margin-left: 1px;
+      font-size: 1px;
     }
   }
 }
@@ -246,14 +241,24 @@ input {
   }
 }
 
+/* login */
+
+.login {
+  margin-top: 200px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background-image: url("nuno_04s.png");
+  color: #FBFCFEFF;
+}
 
 .checkbox {
   margin-top: -10px;
-  margin-bottom: 2px;
+  margin-bottom: 15px;
   span {
     margin-left: 20px;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 20px;
+    padding-left: 8px;
   }
 }
 
@@ -350,3 +355,4 @@ input[type="checkbox"]{
 .cmisin {
   margin-top: 70px;
 }
+
