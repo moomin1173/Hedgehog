@@ -263,8 +263,9 @@ input {
 
 #session_remember_me {
   width: auto;
-  margin-left: 0;
-  vertical-align: middle;
+  position: relative;
+  top: 15px;
+  right: 195px;
 }
 
 /* contact */
