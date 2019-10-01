@@ -280,12 +280,19 @@ h1.price {
 
 /* show */
 
+.user_info {
+  margin-top: 50px;
+}
+
 .show {
-  margin-top: 150px
+  margin-top: 0px
 }
 
 .shows {
-  margin-top: 150px
+  margin-top: 250px
+}
+.shows.jumbotron {
+  background-image: url("nuno_04s.png");
 }
 
 /* help */
@@ -307,8 +314,8 @@ table {
 }
 
 h3.rename {
-  font-size: 53px;
-  color: #777;
+  font-size: 45px;
+  color: #444;
 }
 
 .s01 {
