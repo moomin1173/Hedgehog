@@ -252,7 +252,7 @@ input {
 }
 
 .checkbox {
-  margin-top: -10px;
+  margin-top: 0px;
     span {
         margin-left: 20px;
         font-weight: bold;
@@ -265,6 +265,7 @@ input {
 #session_remember_me {
   width: auto;
   margin-left: 0;
+  margin-top: 7px
 }
 
 /* contact */
