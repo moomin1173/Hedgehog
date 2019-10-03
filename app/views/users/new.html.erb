@@ -1,6 +1,6 @@
-<h1 class="sign">ユーザー登録</h1>
-<div class="siguprow">
-  <div class="col-xs-6 col-xs-offset-3">
+<div class="signup">
+  <div class="row col-md-6 col-md-offset-3">
+     <h1 class="sign">ユーザー登録</h1>
     <%= form_for(@user, url:signup_path) do |f| %>
       <%= render 'shared/error_messages' %>
 
@@ -19,4 +19,5 @@
       <%= f.submit "アカウント登録", class: "acount btn btn-info" %>
     <% end %>
   </div>
+  <%= image_tag "mi01.jpg", class: "price2 col-xs-12" %>
 </div>

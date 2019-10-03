@@ -38,7 +38,7 @@ label {
   text-align: center;
   background-image: url("nuno_04s.png");
   color: #FBFCFEFF;
-  margin-top: 200px;
+  margin-top: 270px;
   padding-top: 0px;
 }
 
@@ -113,10 +113,12 @@ background-color: rgba(0,0,0,0);
 border: none;
 }
 
-a {
+header a {
   font-size: 30px;
   font-weight: bold;
   font-stretch: semi-condensed;
+  text-align: left;
+  margin-left: 3px;
 }
 
 .hedgehog {
@@ -124,6 +126,21 @@ a {
   background-size: contain;
   height: 95px;
   width: 95px;
+}
+
+li.btn {
+  margin-top: 25px;
+  margin-left: 3px;
+}
+
+b.caret {
+
+}
+
+.dropdown-toggle {
+  position: fixed;
+  top: 26px;
+  font-size: 30px;
 }
 
 /* footer */
@@ -244,11 +261,15 @@ input {
 /* login */
 
 .login {
-  margin-top: 200px;
+  margin-top: 270px;
   padding-top: 10px;
   padding-bottom: 5px;
   background-image: url("nuno_04s.png");
   color: #FBFCFEFF;
+}
+
+.login2 {
+  padding: 40px 40px;
 }
 
 .checkbox {
@@ -271,7 +292,7 @@ input {
 /* contact */
 
 h1.price {
-  margin-top: 200px
+  margin-top: 270px
 }
 
 .price2 {
@@ -281,7 +302,7 @@ h1.price {
 /* about */
 
 .work {
-  margin-top: 200px
+  margin-top: 270px
 }
 
 /* show */
@@ -301,7 +322,7 @@ h1.price {
 /* help */
 
 .help {
-  margin-top: 200px
+  margin-top: 270px
 }
 
 p.revive {
@@ -311,9 +332,9 @@ p.revive {
   margin-bottom: 0px;
 }
 
-table {
+table.table {
   background-color: white;
-  padding-bottom: 50px;
+  margin-bottom: 120px;
 }
 
 h3.rename {
@@ -328,11 +349,27 @@ h3.rename {
 /* signup */
 
 .sign {
-  margin-top: 200px
+  padding-top: 40px;
+  color: white;
+}
+
+.signup {
+  margin-top: 270px
+}
+
+.row {
+  background-image: url("nuno_04s.png");
+  padding: 30px;
+  border-radius: 6px;
 }
 
 .acount {
   margin-top:  35px;
+}
+
+#new_user {
+  padding:70px;
+
 }
 
 /* new */
